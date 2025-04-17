@@ -131,9 +131,72 @@
 
           <label for="obs">Observações:</label>
     <textarea class="inputs" id="obs" name="obs" rows="3"></textarea>
+    <h3>Informações adicionais:</h3>
+
+    <label for="motivo">Motivo da viagem:</label>
+    <input type="text" class="inputs" id="motivo" name="motivo" placeholder="Turismo, trabalho, estudos, etc.">
+    
+    <label for="duracao">Duração estimada (em dias):</label>
+    <input type="number" class="inputs" id="duracao" name="duracao" min="1">
+    
+    <label for="horario-preferencia">Horário de preferência para voos:</label>
+    <select class="inputs" id="horario-preferencia" name="horario-preferencia">
+        <option value="">Selecione</option>
+        <option value="manha">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+    </select>
+    
+    <label for="assento">Preferência de assento:</label>
+    <select class="inputs" id="assento" name="assento">
+        <option value="">Selecione</option>
+        <option value="janela">Janela</option>
+        <option value="corredor">Corredor</option>
+        <option value="tanto-faz">Tanto faz</option>
+    </select>
+    
+    <label for="bagagem">Quantidade de bagagens despachadas:</label>
+    <input type="number" class="inputs" id="bagagem" name="bagagem" min="0">
+    
+    <label for="frequencia">Viaja com frequência?</label>
+    <select class="inputs" id="frequencia" name="frequencia">
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+    
+    <label for="animais">Levará animais na viagem?</label>
+    <select class="inputs" id="animais" name="animais">
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+    
+    <label for="vacinas">Está com vacinas em dia?</label>
+    <select class="inputs" id="vacinas" name="vacinas">
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+    
+    <label for="documentos-extra">Possui passaporte ou visto?</label>
+    <input type="text" class="inputs" id="documentos-extra" name="documentos-extra" placeholder="Ex: Passaporte válido, Visto Americano, etc.">
+    
+    <label for="preferencias-musicais">Preferências musicais durante a viagem:</label>
+    <input type="text" class="inputs" id="preferencias-musicais" name="preferencias-musicais">
+    
+    <label for="newsletter">Deseja receber ofertas por e-mail?</label>
+    <select class="inputs" id="newsletter" name="newsletter">
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>              
                    
-                   
-                    <button type="submit">Enviar Cadastro</button>
+    <form id="formulario">
+        
+    
+        <button type="button" onclick="validarFormulario()">Enviar Cadastro</button>
+    </form>
                 
                 
                 
