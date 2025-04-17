@@ -12,7 +12,7 @@
 
     <header>
         <div id="navbar">
-       <h1>Cadastro Para Viagem</h1>
+       <h1> TavaresViagens</h1>
        <img src="logo.viagem.png" alt="logo">
         </div>
     </header>
@@ -22,7 +22,7 @@
             <div id="form">
                 <div class="scroll">
                     <div style="text-align: center; color: rgb(7, 7, 7); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                        <h1>Ficha de Cadastro Completa</h1>
+                        <h1>Cadastro para viagem</h1>
                     </div>
                     <form>
                         <h3>Informações Gerais: </h3>
@@ -73,18 +73,85 @@
                         <input type="date" class="inputs" id="nascimento" name="nascimento" required>
                         <br>
                     </form>
-                </div>
-                </div>
+                    <h3>Viagem:</h3>
+
+                    <label for="destino">Destino:</label>
+                    <input type="text" class="inputs" id="destino" name="destino" placeholder="Ex: Paris, Roma, Salvador" required>
+
+                    <label for="data-viagem">Data da Viagem:</label>
+                    <input type="date" class="inputs" id="data-viagem" name="data-viagem" required>
+
+                    <label for="pagamento">Forma de Pagamento:</label>
+                    <select class="inputs" id="pagamento" name="pagamento" required>
+                        <option value="">Selecione</option>
+                        <option value="credito">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="pix">PIX</option>
+                    </select>
+
+                    <label for="obs">Observações:</label>
+                    <textarea class="inputs" id="obs" name="obs" rows="4" placeholder="Alguma informação adicional?"></textarea>
+
+                   
+                   <label for="companhia">Vai com companhia?</label>
+    <select class="inputs" id="companhia" name="companhia">
+                       <option value="nao">Não</option>
+                       <option value="sim">Sim</option>
+    </select>
+
+                    <label for="alojamento">Tipo de hospedagem:</label>
+    <select class="inputs" id="alojamento" name="alojamento">
+            <option value="">Selecione</option>
+            <option value="hotel">Hotel</option>
+            <option value="pousada">Pousada</option>
+            <option value="airbnb">Airbnb</option>
+            <option value="outro">Outro</option>
+    </select>
+
+    <label for="refeicao">Tipo de refeição:</label>
+    <select class="inputs" id="refeicao" name="refeicao">
+        <option value="">Selecione</option>
+        <option value="completa">Completa</option>
+        <option value="cafe">Café da manhã</option>
+        <option value="nenhuma">Nenhuma</option>
+    </select>
+
+    <h3>Emergência:</h3>
+
+              <label for="contato-emergencia">Contato de emergência:</label>
+            <input type="text" class="inputs" id="contato-emergencia" name="contato-emergencia">
+
+              <label for="telefone-emergencia">Telefone do contato:</label>
+             <input type="tel" class="inputs" id="telefone-emergencia" name="telefone-emergencia">
+
+    <h3>Outras informações:</h3>
+
+               <label for="alergias">Alergias ou restrições?</label>
+                <textarea class="inputs" id="alergias" name="alergias" rows="2"></textarea>
+
+          <label for="obs">Observações:</label>
+    <textarea class="inputs" id="obs" name="obs" rows="3"></textarea>
+                   
+                   
+                    <button type="submit">Enviar Cadastro</button>
                 
-          
+                
+                
+                
+                
+                </form>
+            </div>
         </div>
+    </div>
     </main>
 
-    <footer>
+         <footer>
+             <p>© 2025 TavaresViagens - Todos os direitos reservados.</p>
+        </footer>
 
+    </main>
+  
+    
 
-    </footer>
-
-
-</body>
-</html>
+ </body>
+    </html>
